@@ -61,6 +61,105 @@ Open your terminal or command prompt and install one or more of the following AI
     ```bash
     npm install -g @openai/codex@native
     ```
+  ### 2.  **This is a clear and beginner-friendly guide to help you easily install the AI coding agent**
+
+   
+###   Google Gemini CLI:
+   
+   To install the Google Gemini CLI, you'll need Node.js (version 20 or higher) installed on your system. Once
+  you have Node.js, you can choose one of the following installation methods.
+
+*    **Quick Start**
+
+     This command runs the Gemini CLI without installing it globally on your system. It's a good way to get
+  started quickly.
+
+  Run the following command in your terminal:
+  ```bash
+  1 npx https://github.com/google-gemini/gemini-cli
+  ```
+* **Global Installation**
+
+  This command installs the Gemini CLI globally on your system, so you can run it from anywhere by just
+  typing gemini.
+
+
+  Run the following command in your terminal:
+ ```bash
+1 npm install -g @google/gemini-cli
+```
+
+**After installation, the first time you run the CLI, you will be prompted to:**
+   1. Choose a color theme.
+   2. Authenticate with your Google account.
+      
+###   Anthropic Claude Code:
+*   
+    
+  **Prerequisites**
+
+   1. You need Node.js (version 18 or newer) installed on your system.
+   2. You need an active Claude Pro or Claude Max subscription, or an Anthropic account with billing enabled.
+
+  **Installation Command**
+
+  Open your terminal and run the following command. This will install the claude-code package globally on your system.
+  
+    ```bash
+    1 npm install -g @anthropic-ai/claude-code
+    ```
+   **After Installation**
+
+   1. Authenticate your account:
+      Run the claude command by itself. It will open a browser window for you to log in and authorize the CLI.
+
+   1     claude
+   
+   2. Verify the installation:
+      To make sure everything is set up correctly, you can run the doctor command.
+     ```bash
+   1     claude doctor
+     ```
+###   OpenAI Codex CLI (Legacy):
+
+**The Legacy Codex Models:**
+
+
+  The original OpenAI Codex models, which were specifically focused on code generation, were deprecated in March 2023. They have been replaced by newer, more powerful models like GPT-3.5-Turbo and GPT-4, which are excellent at coding tasks.
+There was never a widely used, official, standalone "Codex CLI". Instead, developers interacted with the Codex models (and all other OpenAI models) through a single, official Python library.
+
+  **The Modern OpenAI CLI (The Replacement)**
+
+
+  The standard and official way to interact with OpenAI's models from the command line is by using the openai Python package. This is the tool you would use today for the tasks that the legacy Codex models
+  handled.
+
+  Here are the commands to install and use it:
+  1. Install the OpenAI Python Library:
+
+  You can install it using pip. It's recommended to use the --upgrade flag to get the latest version.
+ ```bash
+1 pip install --upgrade openai
+```
+
+2. Configure Your API Key:
+  After installation, you need to set your OpenAI API key as an environment variable. The CLI will automatically use it.
+
+
+   * On macOS or Linux:
+     ```bash
+      1     export OPENAI_API_KEY="your-api-key-here"
+     ```
+     * On Windows (Command Prompt):
+```bash
+1     set OPENAI_API_KEY="your-api-key-here"
+```
+ On Windows (PowerShell):
+ ```bash
+1     $env:OPENAI_API_KEY="your-api-key-here"
+```
+
+Once you've done this, you can use the openai command in your terminal to interact with the latest models for code generation and other tasks.
 
 ### 3. **Configure VS Code with Essential Extensions**
 
